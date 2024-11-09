@@ -6,7 +6,7 @@ namespace Grind.Entities
     {
         private GymClasses expertise { get;  set; }  // תחום ההתמחות של המדריך
         private decimal monthlySalary { get;  set; }  // שכר חודשי של המדריך
-        private Time[] classTimes { get; set; }  // מערך של זמנים לשיעורים
+        public Time[] classTimes { get; set; }  // מערך של זמנים לשיעורים
 
         public Trainer(string id, string firstName, string lastName, Address address, string phoneNumber, GymClasses expertise, decimal monthlySalary)
             : base(id, firstName, lastName, address, phoneNumber)
@@ -21,7 +21,7 @@ namespace Grind.Entities
         {
             if (classN.className != this.expertise)
             {
-                Console.WriteLine($"Cannot add this class. This class does not match your expertise in {this.expertise}.");
+                Console.WriteLine("Cannot add this class. This class does not match your expertise in {this.expertise}.");
                 return;
             }
             // עכשיו נבדוק אם הזמן של השיעור תואם לזמנים של שיעורים אחרים

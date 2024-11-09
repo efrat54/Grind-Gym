@@ -1,0 +1,59 @@
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\appsettings.Development.json
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\appsettings.json
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Grind.exe
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Grind.deps.json
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Grind.runtimeconfig.json
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Grind.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Grind.pdb
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Microsoft.OpenApi.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.csproj.AssemblyReference.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.GeneratedMSBuildEditorConfig.editorconfig
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.AssemblyInfoInputs.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.AssemblyInfo.cs
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.csproj.CoreCompileInputs.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.MvcApplicationPartsAssemblyInfo.cs
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.MvcApplicationPartsAssemblyInfo.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.build.json
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.development.json
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\scopedcss\bundle\Grind.styles.css
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.csproj.CopyComplete
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\refint\Grind.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.pdb
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\Grind.genruntimeconfig.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind\obj\Debug\net6.0\ref\Grind.dll
+E:\Grind-Gym\Grind\bin\Debug\net6.0\appsettings.Development.json
+E:\Grind-Gym\Grind\bin\Debug\net6.0\appsettings.json
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Grind.exe
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Grind.deps.json
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Grind.runtimeconfig.json
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Grind.dll
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Grind.pdb
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.csproj.AssemblyReference.cache
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.AssemblyInfoInputs.cache
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.AssemblyInfo.cs
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.csproj.CoreCompileInputs.cache
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.MvcApplicationPartsAssemblyInfo.cs
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.MvcApplicationPartsAssemblyInfo.cache
+E:\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.Grind.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.build.Grind.props
+E:\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Grind.props
+E:\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Grind.props
+E:\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.build.json
+E:\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.development.json
+E:\Grind-Gym\Grind\obj\Debug\net6.0\scopedcss\bundle\Grind.styles.css
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.csproj.CopyComplete
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.dll
+E:\Grind-Gym\Grind\obj\Debug\net6.0\refint\Grind.dll
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.pdb
+E:\Grind-Gym\Grind\obj\Debug\net6.0\Grind.genruntimeconfig.cache
+E:\Grind-Gym\Grind\obj\Debug\net6.0\ref\Grind.dll
