@@ -1,3 +1,4 @@
+using Grind.Controllers;
 using Grind.Entities;
 using Grind.Enums;
 
@@ -6,11 +7,11 @@ namespace UnitTestes
     public class TrainerTest
     {
         [Fact]
-        public void ClassAddingTime()
+        public void ClassAddingTime()//-POST בדיקה להוספת שיעור למדריך ע"פ זמנים
         {
             // Arrange
-            var trainer = new Trainer("111111111", "John", "Doe", new Address("jerusalem","irmiau","56"), "0444444444", GymClasses.Yoga, 3000);
-            var newClass = new Class(GymClasses.Yoga, "yu", new Time(DayOfWeekEnum.Sunday,16,30), DifficultyLevel.Hard);
+            var trainer = new Trainer("111111111", "John", "Doe", new Address("jerusalem", "irmiau", "56"), "0444444444", GymClasses.Yoga, 3000);
+            var newClass = new Class(GymClasses.Yoga, "yu", new Time(DayOfWeekEnum.Sunday, 16, 30), DifficultyLevel.Hard);
 
             // Act
             trainer.ClassAdding(newClass);
@@ -20,7 +21,7 @@ namespace UnitTestes
             Assert.True(trainer.classTimes.Any(time => time != null && time.IsSameTime(newClass.classTime)));
         }
         [Fact]
-        public void GetTrainerById()
+        public void GetTrainerById()//GET
         {
             // Arrange
             var trainerId = "999999999";  // ID לא קיים
@@ -30,7 +31,56 @@ namespace UnitTestes
 
             // Assert
             Assert.Null(result);  // אם המדריך לא נמצא, התוצאה צריכה להיות null
+
+
         }
-        
+        //post
+        [Fact]
+        public void AddNewTrainer()
+        {
+            // Arrange
+            var newTrainer = new Trainer("123456789", "Jane", "Doe", new Address("Tel Aviv", "Main Street", "10"), "0501234567", GymClasses.Pilates, 2500);
+
+            // Act
+            new TrainersController().Post(newTrainer);  // קריאה לפונקציה POST עם מדריך חדש
+
+            // Assert
+            var addedTrainer = DataContext.TrainersLst.FirstOrDefault(t => t.Id == newTrainer.Id);  // מחפשים אם המדריך התווסף
+            Assert.NotNull(addedTrainer);  // אם המדריך נוסיף כראוי, הוא לא אמור להיות null
+        }
+        //put
+        [Fact]
+        public void UpdateTrainerInfo()
+        {
+            // Arrange
+            var trainerToUpdate = new Trainer("111111111", "John", "Doe", new Address("Jerusalem", "Irmiya", "56"), "0444444444", GymClasses.Yoga, 3000);
+            DataContext.TrainersLst.Add(trainerToUpdate);  // מוסיפים את המדריך כדי שנוכל לעדכן אותו
+            var updatedTrainer = new Trainer("111111111", "John", "Smith", new Address("Jerusalem", "King Street", "99"), "0505555555", GymClasses.Yoga, 3500);  // המדריך לאחר העדכון
+
+            // Act
+            new TrainersController().Put(updatedTrainer);  // קריאה לפונקציה PUT לעדכון
+
+            // Assert
+            var result = DataContext.TrainersLst.FirstOrDefault(t => t.Id == trainerToUpdate.Id);  // מחפשים את המדריך המעודכן
+            Assert.NotNull(result);  // המדריך לא אמור להיות null
+            Assert.Equal("John Smith", result.FirstName + " " + result.LastName);  // וודא שהשם שונה
+            Assert.Equal(3500, result.monthlySalary);  // שכר חודשי מעודכן
+        }
+        //DELETE
+        [Fact]
+        public void DeleteTrainer()
+        {
+            // Arrange
+            var trainerToDelete = new Trainer("222222222", "Mark", "Twain", new Address("New York", "5th Ave", "1"), "0533333333", GymClasses.Boxing, 4000);
+            DataContext.TrainersLst.Add(trainerToDelete);  // מוסיפים את המדריך כדי שנוכל למחוק אותו
+
+            // Act
+            new TrainersController().Delete(trainerToDelete);  // קריאה לפונקציה DELETE
+
+            // Assert
+            var deletedTrainer = DataContext.TrainersLst.FirstOrDefault(t => t.Id == trainerToDelete.Id);  // מחפשים את המדריך
+            Assert.Null(deletedTrainer);  // אם המדריך נמחק כראוי, הוא לא אמור להתקיים ברשימה
+        }
+
     }
 }

@@ -4,8 +4,8 @@ namespace Grind.Entities
 {
     public class Trainer : Person
     {
-        private GymClasses expertise { get;  set; }  // תחום ההתמחות של המדריך
-        private decimal monthlySalary { get;  set; }  // שכר חודשי של המדריך
+        public GymClasses expertise { get;  set; }  // תחום ההתמחות של המדריך
+        public decimal monthlySalary { get;  set; }  // שכר חודשי של המדריך
         public Time[] classTimes { get; set; }  // מערך של זמנים לשיעורים
 
         public Trainer(string id, string firstName, string lastName, Address address, string phoneNumber, GymClasses expertise, decimal monthlySalary)

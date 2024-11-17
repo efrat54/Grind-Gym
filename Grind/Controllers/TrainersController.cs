@@ -37,13 +37,26 @@ namespace Grind.Controllers
 
         // PUT api/<WorkersController>/5
         [HttpPut]
+        [HttpPut]
         public void Put([FromBody] Trainer trainer)
         {
-            Trainer t = DataContext.TrainersLst.FirstOrDefault(f1 => f1.Id == trainer.Id);
+            // חפש את המדריך לפי המזהה
+            var existingTrainer = DataContext.TrainersLst.FirstOrDefault(f1 => f1.Id == trainer.Id);
 
-            t = trainer;//לוודא שאכן משנה את הליסט 
-
+            if (existingTrainer != null)
+            {
+                // עדכן את המדריך
+                existingTrainer.FirstName = trainer.FirstName;
+                existingTrainer.LastName = trainer.LastName;
+                existingTrainer.Address = trainer.Address;
+                existingTrainer.PhoneNumber = trainer.PhoneNumber;
+                existingTrainer.Email = trainer.Email;
+                existingTrainer.monthlySalary = trainer.monthlySalary; // עדכון שכר חודשי אם נדרש
+                existingTrainer.expertise = trainer.expertise; // ודא שכולל גם את תחום ההתמחות
+                                                               // אם יש פרמטרים נוספים, עדכן אותם פה
+            }
         }
+
 
         // DELETE api/<WorkersController>/5
         [HttpDelete("{id}")]
