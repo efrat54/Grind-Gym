@@ -1,4 +1,5 @@
 ﻿using Grind.Entities;
+using Grind.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Grind.Controllers
@@ -7,60 +8,69 @@ namespace Grind.Controllers
     [ApiController]
     public class TrainersController : ControllerBase
     {
+
+
+        private readonly IDataContext _dataContext;
+        public TrainersController(IDataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
+
+
+
+
+
         // GET: api/<WorkersController>
         [HttpGet]
-        public IEnumerable<Trainer> Get()
+        public ActionResult<IEnumerable<Trainer>> Get()
         {
-            return DataContext.TrainersLst;
+            if (_dataContext.TrainersLst == null)
+                return NotFound();
+            return Ok(_dataContext.TrainersLst);
         }
 
         // GET api/<WorkersController>/5
         [HttpGet("{id}")]
-        public string Get(string id)
+        public ActionResult Get(string id)
         {
-            var trainer = DataContext.TrainersLst.FirstOrDefault(t => t.Id == id);
-            if (trainer == null)
+            int index= _dataContext.TrainersLst.FindIndex(t => t.Id == id);
+            if (index==-1)
             {
-                return "User not found";
+                return NotFound("not found");
             }
-            return "value";
+            return Ok(_dataContext.TrainersLst[index]);
         }
 
         // POST api/<WorkersController>
         [HttpPost]
-        public void Post([FromBody] Trainer t)
+        public ActionResult Post([FromBody] Trainer t)
         {
-            DataContext.TrainersLst.Add(t);
+            if (_dataContext.TrainersLst.FindIndex(t1 => t1.Id == t.Id) == -1)
+            {
+                _dataContext.TrainersLst.Add(t);
+                return Ok();
+            }return NotFound("this id is already in system");
         }
 
         // PUT api/<WorkersController>/5
         [HttpPut]
-        [HttpPut]
-        public void Put([FromBody] Trainer trainer)
+        public ActionResult Put([FromBody] Trainer trainer)
         {
-            // חפש את המדריך לפי המזהה
-            var existingTrainer = DataContext.TrainersLst.FirstOrDefault(f1 => f1.Id == trainer.Id);
-
-            if (existingTrainer != null)
-            {
-                // עדכן את המדריך
-                existingTrainer.FirstName = trainer.FirstName;
-                existingTrainer.LastName = trainer.LastName;
-                existingTrainer.Address = trainer.Address;
-                existingTrainer.PhoneNumber = trainer.PhoneNumber;
-                existingTrainer.Email = trainer.Email;
-                existingTrainer.monthlySalary = trainer.monthlySalary; // עדכון שכר חודשי אם נדרש
-                existingTrainer.expertise = trainer.expertise; // ודא שכולל גם את תחום ההתמחות
-                                                               // אם יש פרמטרים נוספים, עדכן אותם פה
-            }
+            int index = _dataContext.TrainersLst.FindIndex(c => c.Id == trainer.Id);
+            if (index == -1)
+                return NotFound();
+            _dataContext.TrainersLst[index] = trainer;
+            return Ok();
         }
-
-
         // DELETE api/<WorkersController>/5
         [HttpDelete("{id}")]
-        public void Delete(Trainer t)
+        public ActionResult Delete(string id)
         {
-            DataContext.TrainersLst.Remove(t);
+            int index = _dataContext.TrainersLst.FindIndex(c => c.Id == id);
+            if (index == -1)
+                return NotFound();
+            _dataContext.TrainersLst.RemoveAt(index);
+            return Ok();
         }
     }
 }

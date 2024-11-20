@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TYIraqlx815j8GlrkN3Q3tr17enUTQYmhUtnZ+aCu4t6XiNVNCZKsJ6QFy9roRITYUW2nfI76pZrAVw1cVYlQQ==",
+  "dgSpecHash": "hgsYuyf7r7a2MNoEYuVd691u7gAAH8lUbSlmE1PQIxqezOseQx+mZaNTNzG+zDDBeQGda3Vv7uJ7Iz3hyPsmVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\UnitTestes\\UnitTestes.csproj",
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\UnitTestes\\UnitTestes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merav\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

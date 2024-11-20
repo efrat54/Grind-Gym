@@ -1,5 +1,6 @@
 ﻿using Grind.Entities;
 using Grind.Enums;
+using Grind.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Grind.Controllers
@@ -8,39 +9,63 @@ namespace Grind.Controllers
     [ApiController]
     public class ClassesController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<Class> Get()
+
+
+        private readonly IDataContext _dataContext;
+        public ClassesController(IDataContext dataContext)
         {
-            return DataContext.ClassLst;
+            _dataContext = dataContext;
+        }
+
+
+
+        [HttpGet]
+        public ActionResult <IEnumerable<Class>> Get()
+        {
+            if(_dataContext.ClassLst==null)
+                return NotFound();
+            return Ok(_dataContext.ClassLst);
         }
 
         [HttpGet("{class name}")]
-        public string Get(GymClasses name)
+        public ActionResult <Class> Get(Time time, GymClasses name)
         {
-            var lesson = DataContext.ClassLst.FirstOrDefault(c=>c.className == name);
+            Class lesson = _dataContext.ClassLst.FirstOrDefault(c=>( c.className == name && c.classTime.IsSameTime(time)));
             if (lesson == null)
             {
-                return "User not found";
+                return NotFound("User not found");
             }
-            return "value";
+            return Ok(lesson);
         }
 
         [HttpPost]
-        public void Post([FromBody] Class c)
+        public ActionResult Post([FromBody] Class c)
         {
-            DataContext.ClassLst.Add(c);
+            _dataContext.ClassLst.Add(c);
+            return Ok();
         }
         
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Class c)
+        public ActionResult Put(Class c1)
         {
+            int index = _dataContext.ClassLst.FindIndex(c => (c.className == c1.className && c.classTime.IsSameTime(c1.classTime)));
+            if(index==-1)
+                return NotFound();
+            _dataContext.ClassLst[index]=c1;
+            return Ok();
         }
+        [HttpDelete()]
+        public ActionResult Delete(Time time, GymClasses name)
+        {
+            int index = _dataContext.ClassLst.FindIndex(c => (c.className == name && c.classTime.IsSameTime(time)));
 
-        [HttpDelete("{id}")]
-        public void Delete(Class c)
-        {
-            DataContext.ClassLst.Remove(c);
+            if (index == -1)
+                return NotFound("Id container not found");
+
+            _dataContext.ClassLst.RemoveAt(index);
+            return Ok();
         }
+        
 
     }
 }

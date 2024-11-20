@@ -39,7 +39,7 @@ namespace Grind.Entities
             {
                 if (classTimes[i] == null)
                 {
-                    classTimes[i] = new Time(classN.classTime.Day,classN.classTime.TimeOfDay);  // הוספת הזמן לשיעור במערך
+                    classTimes[i] = new Time(classN.classTime.Day,classN.classTime.hour,classN.classTime.minute);  // הוספת הזמן לשיעור במערך
                     this.monthlySalary += (classN.cost* classN.numOfParticipants)*3/10;
                     Console.WriteLine("Class added successfully.");
                     return;
