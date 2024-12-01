@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
+      "projectUniqueName": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
       "projectName": "Grind.Core",
-      "projectPath": "E:\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
+      "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
       "packagesPath": "C:\\Users\\merav\\.nuget\\packages\\",
-      "outputPath": "E:\\Grind-Gym\\Grind.Core\\obj\\",
+      "outputPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

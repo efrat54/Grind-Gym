@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
+      "projectUniqueName": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
       "projectName": "Grind.Data",
-      "projectPath": "E:\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
+      "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
       "packagesPath": "C:\\Users\\merav\\.nuget\\packages\\",
-      "outputPath": "E:\\Grind-Gym\\Grind.Data\\obj\\",
+      "outputPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Grind-Gym\\Grind.Core\\Grind.Core.csproj": {
-              "projectPath": "E:\\Grind-Gym\\Grind.Core\\Grind.Core.csproj"
+            "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj": {
+              "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj"
             }
           }
         }
