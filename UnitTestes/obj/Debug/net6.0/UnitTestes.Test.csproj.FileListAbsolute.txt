@@ -1,0 +1,6 @@
+D:\hrind\Grind-Gym\UnitTestes\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.csproj.AssemblyReference.cache
+D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.AssemblyInfoInputs.cache
+D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.AssemblyInfo.cs
+D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.csproj.CoreCompileInputs.cache

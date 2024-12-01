@@ -88,6 +88,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Grind.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Grind.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Grind.Core.dll": {}
+        }
+      },
+      "Grind.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Grind.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Grind.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Grind.Service.dll": {}
+        }
       }
     }
   },
@@ -429,10 +452,22 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Grind.Core/1.0.0": {
+      "type": "project",
+      "path": "../Grind.Core/Grind.Core.csproj",
+      "msbuildProject": "../Grind.Core/Grind.Core.csproj"
+    },
+    "Grind.Service/1.0.0": {
+      "type": "project",
+      "path": "../Grind.Service/Grind.Service.csproj",
+      "msbuildProject": "../Grind.Service/Grind.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Grind.Core >= 1.0.0",
+      "Grind.Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -443,11 +478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\Grind\\Grind.csproj",
-      "projectName": "Grind",
-      "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\Grind\\Grind.csproj",
+      "projectUniqueName": "E:\\Grind-Gym\\Grind\\Grind.Api.csproj",
+      "projectName": "Grind.Api",
+      "projectPath": "E:\\Grind-Gym\\Grind\\Grind.Api.csproj",
       "packagesPath": "C:\\Users\\merav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\Grind\\obj\\",
+      "outputPath": "E:\\Grind-Gym\\Grind\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -467,7 +502,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Grind-Gym\\Grind.Core\\Grind.Core.csproj": {
+              "projectPath": "E:\\Grind-Gym\\Grind.Core\\Grind.Core.csproj"
+            },
+            "E:\\Grind-Gym\\Grind.Service\\Grind.Service.csproj": {
+              "projectPath": "E:\\Grind-Gym\\Grind.Service\\Grind.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

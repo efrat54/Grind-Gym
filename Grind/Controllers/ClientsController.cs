@@ -1,7 +1,8 @@
-﻿using Grind.Entities;
-using Grind.Enums;
-using Grind.Interfaces;
+﻿using Grind.Core.Entities;
+using Grind.Core.Interfaces;
+using Grind.Service;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,52 +11,40 @@ namespace Grind.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-
-
     public class ClientsController : ControllerBase
     {
-
-
-
-
         private readonly IDataContext _dataContext;
+        private readonly ClientService _cientService;
+
         public ClientsController(IDataContext dataContext)
         {
             _dataContext = dataContext;
         }
-
-
-
         // GET: api/<Clients>
         [HttpGet]
         public ActionResult<IEnumerable<Client>> Get()
         {
-            if (_dataContext.ClientsLst == null)
+            List<Client> c = _cientService.GetClients();
+            if (c == null)
                 return NotFound();
-            return Ok(_dataContext.ClientsLst);
+            return Ok(c);
         }
 
         // GET api/<Clients>/5
         [HttpGet("{id}")]
         public ActionResult Get(string id)
         {
-            int index = _dataContext.ClientsLst.FindIndex(t => t.Id == id);
-            if (index == -1)
-            {
-                return NotFound("not found");
-            }
-            return Ok(_dataContext.ClientsLst[index]);
+            Client t = _cientService.GetSpecificClient(id);
+            if (t == null) return NotFound("Client did not found");
+            return Ok(t);
         }
 
         // POST api/<Clients>
         [HttpPost]
         public ActionResult Post([FromBody] Client c)
         {
-            if (_dataContext.ClientsLst.FindIndex(c1 => c1.Id == c.Id) == -1)
-            {
-                _dataContext.ClientsLst.Add(c);
-                return Ok();
-            }
+            if (_cientService.AddClient(c))
+                return Ok("Client added seccessfully");
             return NotFound("this id is already in system");
         }
 
@@ -63,22 +52,18 @@ namespace Grind.Controllers
         [HttpPut("{id}")]
         public ActionResult Put([FromBody] Client client)
         {
-            int index = _dataContext.ClientsLst.FindIndex(c => c.Id == client.Id);
-            if (index == -1)
-                return NotFound();
-            _dataContext.ClientsLst[index] = client;
-            return Ok();
+            if (_cientService.AddClient(client))
+                return Ok("Client updated seccessfully");
+            return NotFound("Client did not found");
         }
-
         // DELETE api/<Clients>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(string id)
         {
-            int index= _dataContext.ClientsLst.FindIndex(c => c.Id == id);
-            if(index == -1)
-                return NotFound();
-            _dataContext.ClientsLst.RemoveAt(index);
-            return Ok();
+            if (_cientService.DeleteClient(id))
+
+                return Ok("Client deleted seccessfully");
+            return NotFound("Client did not found");
         }
     }
 }

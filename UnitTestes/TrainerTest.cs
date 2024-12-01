@@ -1,6 +1,6 @@
 using Grind.Controllers;
-using Grind.Entities;
-using Grind.Enums;
+using Grind.Core.Entities;
+using Grind.Core.Enums;
 
 namespace UnitTestes
 {

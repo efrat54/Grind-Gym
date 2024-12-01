@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grind", "Grind\Grind.csproj", "{C8AA5D8C-D81C-4057-B685-F25EC234C03D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grind.Api", "Grind\Grind.Api.csproj", "{C8AA5D8C-D81C-4057-B685-F25EC234C03D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestes", "UnitTestes\UnitTestes.csproj", "{C79C9B76-3294-4AA9-8174-F76783C04D93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestes.Test", "UnitTestes\UnitTestes.Test.csproj", "{C79C9B76-3294-4AA9-8174-F76783C04D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grind.Core", "Grind.Core\Grind.Core.csproj", "{9A7EB37D-8FCE-4967-B743-4F19E90FFFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grind.Data", "Grind.Data\Grind.Data.csproj", "{41C3C18A-271D-4936-80A8-51CF50670527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grind.Service", "Grind.Service\Grind.Service.csproj", "{F6851082-197F-4CAD-A7BC-7EB1644F781D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{C79C9B76-3294-4AA9-8174-F76783C04D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C79C9B76-3294-4AA9-8174-F76783C04D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C79C9B76-3294-4AA9-8174-F76783C04D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7EB37D-8FCE-4967-B743-4F19E90FFFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7EB37D-8FCE-4967-B743-4F19E90FFFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7EB37D-8FCE-4967-B743-4F19E90FFFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7EB37D-8FCE-4967-B743-4F19E90FFFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C3C18A-271D-4936-80A8-51CF50670527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C3C18A-271D-4936-80A8-51CF50670527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C3C18A-271D-4936-80A8-51CF50670527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C3C18A-271D-4936-80A8-51CF50670527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6851082-197F-4CAD-A7BC-7EB1644F781D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6851082-197F-4CAD-A7BC-7EB1644F781D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6851082-197F-4CAD-A7BC-7EB1644F781D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6851082-197F-4CAD-A7BC-7EB1644F781D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

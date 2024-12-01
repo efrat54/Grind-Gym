@@ -1,6 +1,5 @@
-using Grind.Interfaces;
-using Grind.Entities;
-using Grind;
+using Grind.Core.Interfaces;
+using Grind.Core.Entities;
 namespace Ashdod_Port
 {
     public class Program

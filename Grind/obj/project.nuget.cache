@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GtPhzoxJW79kYyKVR9vxmopLa920moNyBy+grSjCxShyZYLn6WbKrvMSjr9uhWa6GH/19Bhe0PvLYps1Xwj/ug==",
+  "dgSpecHash": "nolgu6xdas4fDaDXxtTqbwBj2t4zqJVU6Y2S4F5kMAbvnnaZ/+QQAhRHimj4M1VncpPABnXoUTpwNhjLlwMdew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\Grind\\Grind.csproj",
+  "projectFilePath": "E:\\Grind-Gym\\Grind\\Grind.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

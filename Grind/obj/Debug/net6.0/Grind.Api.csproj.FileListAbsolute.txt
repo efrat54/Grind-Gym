@@ -1,0 +1,6 @@
+D:\hrind\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.csproj.AssemblyReference.cache
+D:\hrind\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\hrind\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.AssemblyInfoInputs.cache
+D:\hrind\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.AssemblyInfo.cs
+D:\hrind\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.csproj.CoreCompileInputs.cache
+D:\hrind\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.MvcApplicationPartsAssemblyInfo.cache

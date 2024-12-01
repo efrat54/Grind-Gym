@@ -1,0 +1,12 @@
+D:\hrind\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Service.deps.json
+D:\hrind\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Service.dll
+D:\hrind\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Service.pdb
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.csproj.AssemblyReference.cache
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.AssemblyInfoInputs.cache
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.AssemblyInfo.cs
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.csproj.CoreCompileInputs.cache
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.dll
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\refint\Grind.Service.dll
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.pdb
+D:\hrind\Grind-Gym\Grind.Service\obj\Debug\net6.0\ref\Grind.Service.dll

@@ -1,6 +1,8 @@
-﻿using Grind.Entities;
-using Grind.Interfaces;
+﻿using Grind.Core.Entities;
+using Grind.Core.Interfaces;
+using Grind.Service;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Grind.Controllers
 {
@@ -8,69 +10,57 @@ namespace Grind.Controllers
     [ApiController]
     public class TrainersController : ControllerBase
     {
-
-
         private readonly IDataContext _dataContext;
+        private readonly TrainerService _trainerService;
         public TrainersController(IDataContext dataContext)
         {
             _dataContext = dataContext;
         }
-
-
-
-
-
         // GET: api/<WorkersController>
         [HttpGet]
         public ActionResult<IEnumerable<Trainer>> Get()
         {
-            if (_dataContext.TrainersLst == null)
-                return NotFound();
-            return Ok(_dataContext.TrainersLst);
-        }
+            List<Trainer> trainersTmp = _trainerService.GetTrainers();
+            if (trainersTmp == null)
+                return NotFound("Trainer did not found");
+            return Ok(trainersTmp);
 
+
+        }
         // GET api/<WorkersController>/5
         [HttpGet("{id}")]
         public ActionResult Get(string id)
         {
-            int index= _dataContext.TrainersLst.FindIndex(t => t.Id == id);
-            if (index==-1)
-            {
+            Trainer t = _trainerService.GetSpecificTrainer(id);
+            if (t == null)
                 return NotFound("not found");
-            }
-            return Ok(_dataContext.TrainersLst[index]);
+            return Ok(t);
         }
 
         // POST api/<WorkersController>
         [HttpPost]
         public ActionResult Post([FromBody] Trainer t)
         {
-            if (_dataContext.TrainersLst.FindIndex(t1 => t1.Id == t.Id) == -1)
-            {
-                _dataContext.TrainersLst.Add(t);
-                return Ok();
-            }return NotFound("this id is already in system");
+            if (_trainerService.AddTrainer(t))
+                return Ok("Trained added seccessfully");
+            return NotFound("this id is already in system");
         }
 
         // PUT api/<WorkersController>/5
         [HttpPut]
         public ActionResult Put([FromBody] Trainer trainer)
         {
-            int index = _dataContext.TrainersLst.FindIndex(c => c.Id == trainer.Id);
-            if (index == -1)
-                return NotFound();
-            _dataContext.TrainersLst[index] = trainer;
-            return Ok();
+            if (_trainerService.UpdateTrainer(trainer))
+                return Ok("Trainer updated seccessfully");
+            return NotFound("Trainer did not found");
         }
         // DELETE api/<WorkersController>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(string id)
         {
-            int index = _dataContext.TrainersLst.FindIndex(c => c.Id == id);
-            if (index == -1)
-                return NotFound();
-            _dataContext.TrainersLst.RemoveAt(index);
-            return Ok();
+            if (_trainerService.DeleteTrainer(id))
+                return Ok("Trainer deleted seccesfully");
+            return NotFound("Trainer did not found");
         }
     }
 }
