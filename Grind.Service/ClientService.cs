@@ -1,10 +1,16 @@
 ﻿
 using Grind.Core.Entities;
+using Grind.Core.Interfaces;
 
 namespace Grind.Service
 {
-    public class ClientService
+    public class ClientService: IClientService
     {
+        private readonly IDataContext _dataContext;
+        public ClientService(IDataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
         public List<Client> GetClients()
         {
             return _dataContext.ClientsLst;
@@ -27,7 +33,6 @@ namespace Grind.Service
             }
             return false;
         }
-
         public bool UpdateClient(Client client)
         {
             int index = _dataContext.ClientsLst.FindIndex(c => c.Id == client.Id);
@@ -38,7 +43,6 @@ namespace Grind.Service
             }
             return false;
         }
-
         public bool DeleteClient(string id)
         {
             int index = _dataContext.ClientsLst.FindIndex(c => c.Id == id);

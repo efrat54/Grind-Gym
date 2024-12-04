@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Grind.Data/1.0.0": {
+        "dependencies": {
+          "Grind.Core": "1.0.0"
+        },
+        "runtime": {
+          "Grind.Data.dll": {}
+        }
+      },
+      "Grind.Core/1.0.0": {
+        "runtime": {
+          "Grind.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Grind.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Grind.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

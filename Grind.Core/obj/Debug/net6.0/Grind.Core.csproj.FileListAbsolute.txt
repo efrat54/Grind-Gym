@@ -3,3 +3,26 @@ D:\hrind\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.GeneratedMSBuildEditor
 D:\hrind\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfoInputs.cache
 D:\hrind\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfo.cs
 D:\hrind\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.csproj.CoreCompileInputs.cache
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.deps.json
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.dll
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.pdb
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.csproj.AssemblyReference.cache
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfoInputs.cache
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfo.cs
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.csproj.CoreCompileInputs.cache
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.dll
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\refint\Grind.Core.dll
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.pdb
+D:\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\ref\Grind.Core.dll
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.deps.json
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.dll
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.pdb
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfoInputs.cache
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfo.cs
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.csproj.CoreCompileInputs.cache
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.dll
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\refint\Grind.Core.dll
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.pdb
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Core\obj\Debug\net6.0\ref\Grind.Core.dll

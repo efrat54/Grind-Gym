@@ -6,25 +6,23 @@ using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Grind.Controllers
+namespace Grind.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
 
     public class ClientsController : ControllerBase
     {
-        private readonly IDataContext _dataContext;
-        private readonly ClientService _cientService;
-
-        public ClientsController(IDataContext dataContext)
+        private readonly IClientService _clientService;
+        public ClientsController(IClientService clientService)
         {
-            _dataContext = dataContext;
+            _clientService = clientService;
         }
         // GET: api/<Clients>
         [HttpGet]
         public ActionResult<IEnumerable<Client>> Get()
         {
-            List<Client> c = _cientService.GetClients();
+            List<Client> c = _clientService.GetClients();
             if (c == null)
                 return NotFound();
             return Ok(c);
@@ -34,7 +32,7 @@ namespace Grind.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(string id)
         {
-            Client t = _cientService.GetSpecificClient(id);
+            Client t = _clientService.GetSpecificClient(id);
             if (t == null) return NotFound("Client did not found");
             return Ok(t);
         }
@@ -43,7 +41,7 @@ namespace Grind.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Client c)
         {
-            if (_cientService.AddClient(c))
+            if (_clientService.AddClient(c))
                 return Ok("Client added seccessfully");
             return NotFound("this id is already in system");
         }
@@ -52,7 +50,7 @@ namespace Grind.Controllers
         [HttpPut("{id}")]
         public ActionResult Put([FromBody] Client client)
         {
-            if (_cientService.AddClient(client))
+            if (_clientService.AddClient(client))
                 return Ok("Client updated seccessfully");
             return NotFound("Client did not found");
         }
@@ -60,7 +58,7 @@ namespace Grind.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(string id)
         {
-            if (_cientService.DeleteClient(id))
+            if (_clientService.DeleteClient(id))
 
                 return Ok("Client deleted seccessfully");
             return NotFound("Client did not found");

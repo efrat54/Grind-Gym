@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Grind.Service/1.0.0": {
+        "dependencies": {
+          "Grind.Core": "1.0.0"
+        },
         "runtime": {
           "Grind.Service.dll": {}
+        }
+      },
+      "Grind.Core/1.0.0": {
+        "runtime": {
+          "Grind.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Grind.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Grind.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

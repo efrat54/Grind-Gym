@@ -4,23 +4,22 @@ using Grind.Service;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace Grind.Controllers
+namespace Grind.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TrainersController : ControllerBase
+    public class TrainerConroller : ControllerBase
     {
-        private readonly IDataContext _dataContext;
-        private readonly TrainerService _trainerService;
-        public TrainersController(IDataContext dataContext)
+        private readonly ITrainerService _TrainerService;
+        public TrainerConroller(ITrainerService trainerService)
         {
-            _dataContext = dataContext;
+            _TrainerService = trainerService;
         }
         // GET: api/<WorkersController>
         [HttpGet]
         public ActionResult<IEnumerable<Trainer>> Get()
         {
-            List<Trainer> trainersTmp = _trainerService.GetTrainers();
+            List<Trainer> trainersTmp = _TrainerService.GetTrainers();
             if (trainersTmp == null)
                 return NotFound("Trainer did not found");
             return Ok(trainersTmp);
@@ -31,7 +30,7 @@ namespace Grind.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(string id)
         {
-            Trainer t = _trainerService.GetSpecificTrainer(id);
+            Trainer t = _TrainerService.GetSpecificTrainer(id);
             if (t == null)
                 return NotFound("not found");
             return Ok(t);
@@ -41,7 +40,7 @@ namespace Grind.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Trainer t)
         {
-            if (_trainerService.AddTrainer(t))
+            if (_TrainerService.AddTrainer(t))
                 return Ok("Trained added seccessfully");
             return NotFound("this id is already in system");
         }
@@ -50,7 +49,7 @@ namespace Grind.Controllers
         [HttpPut]
         public ActionResult Put([FromBody] Trainer trainer)
         {
-            if (_trainerService.UpdateTrainer(trainer))
+            if (_TrainerService.UpdateTrainer(trainer))
                 return Ok("Trainer updated seccessfully");
             return NotFound("Trainer did not found");
         }
@@ -58,7 +57,7 @@ namespace Grind.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(string id)
         {
-            if (_trainerService.DeleteTrainer(id))
+            if (_TrainerService.DeleteTrainer(id))
                 return Ok("Trainer deleted seccesfully");
             return NotFound("Trainer did not found");
         }

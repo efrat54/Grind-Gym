@@ -1,7 +1,8 @@
 ﻿using Grind.Core.Entities;
 using Grind.Core.Enums;
 using Grind.Core.Interfaces;
-namespace UnitTestes
+
+namespace UnitTestes.Test
 {
     public class FakeDataContext : IDataContext
     {

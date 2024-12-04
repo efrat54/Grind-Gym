@@ -1,6 +1,10 @@
 using Grind.Core.Interfaces;
 using Grind.Core.Entities;
-namespace Ashdod_Port
+using Microsoft.Extensions.DependencyInjection;
+using Grind.Service;
+using Grind.Data;
+
+namespace Grind.Api
 {
     public class Program
     {
@@ -15,12 +19,11 @@ namespace Ashdod_Port
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-
-
-
-            builder.Services.AddSingleton<IDataContext, FakeDataContext>();
-
-
+            //הזרקת תלויות
+            builder.Services.AddSingleton<IDataContext,DataContext>();
+            builder.Services.AddScoped<IClassService, ClassService>();
+            builder.Services.AddScoped<IClientService, ClientService>();
+            builder.Services.AddScoped<ITrainerService, TrainerService>();
 
 
             var app = builder.Build();
@@ -38,7 +41,7 @@ namespace Ashdod_Port
 
             app.MapControllers();
 
-            app.Run(); 
+            app.Run();
         }
     }
 }

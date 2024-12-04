@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "HMzOyrJTrPW2JtehuAAQ5JNLR+dOo4QT7DA0oIx5OZs=",
-  "Source": "Grind",
-  "BasePath": "_content/Grind",
+  "Hash": "U8XSfT3KAx8G+x6IGx/Bk2qLtGHtBL+GLEZqAC9JHrk=",
+  "Source": "Grind.Api",
+  "BasePath": "_content/Grind.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

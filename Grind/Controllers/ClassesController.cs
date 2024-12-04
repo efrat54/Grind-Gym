@@ -6,32 +6,31 @@ using Microsoft.AspNetCore.Mvc;
 using Grind.Service;
 using Class = Grind.Core.Entities.Class;
 
-namespace Grind.Controllers
+namespace Grind.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ClassesController : ControllerBase
     {
-        private readonly IDataContext _dataContext;
-        private readonly ClassService _classService;
-        public ClassesController(IDataContext dataContext)
+        private readonly IClassService _ClassService;
+        public ClassesController(IClassService ClassService)
         {
-            _dataContext = dataContext;
+            _ClassService = ClassService;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<Class>> Get()
         {
-            Class c = _classService.GetClasses;
+            List<Class> c = _ClassService.GetClasses();
             if (c == null)
-                return NotFound("Class did not found");
+                return NotFound();
             return Ok(c);
         }
 
         [HttpGet("{class name}")]
         public ActionResult<Class> Get(Time time, GymClasses name)
         {
-            Class lesson = _classService.GetSpecificClass(time, name);
+            Class lesson = _ClassService.GetSpecificClass(time, name);
             if (lesson == null)
             {
                 return NotFound("Class did not found");
@@ -44,21 +43,21 @@ namespace Grind.Controllers
         {
             if (c == null)
                 return NotFound();
-            _classService.AddClass(c);
+            _ClassService.AddClass(c);
             return Ok("added seccessfully");
         }
 
         [HttpPut("{id}")]
         public ActionResult Put(Class c1)
         {
-            if (_classService.UpdateClass(c1))
+            if (_ClassService.UpdateClass(c1))
                 return Ok("Class added seccessfully");
             return NotFound("Class did not found");
         }
         [HttpDelete()]
         public ActionResult Delete(Time time, GymClasses name)
         {
-            if (_classService.DeleteClass(time, name))
+            if (_ClassService.DeleteClass(time, name))
                 return Ok("Class deleted seccessfully");
             return NotFound("Class did not found");
         }

@@ -1,31 +1,32 @@
 ﻿
 using Grind.Core.Entities;
 using Grind.Core.Enums;
+using Grind.Core.Interfaces;
+using System.Linq;
 
 namespace Grind.Service
 {
-    public class ClassService
+    public class ClassService: IClassService
     {
-        public IEnumerable<Class> GetClasses()
+        private readonly IDataContext _dataContext;
+        public ClassService(IDataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
+        public List<Class> GetClasses()
         {
             return _dataContext.ClassLst;
         }
-
-
         public Class GetSpecificClass(Time time, Core.Enums.GymClasses name)
         {
+            
             return _dataContext.ClassLst.FirstOrDefault(c => (c.className == name && c.classTime.IsSameTime(time)));
 
         }
-
-
         public void AddClass(Class c)
         {
             _dataContext.ClassLst.Add(c);
-
         }
-
-
         public bool UpdateClass(Class c1)
         {
             int index = _dataContext.ClassLst.FindIndex(c => (c.className == c1.className && c.classTime.IsSameTime(c1.classTime)));
@@ -36,7 +37,6 @@ namespace Grind.Service
             }
             return false;
         }
-
         public bool DeleteClass(Time time, GymClasses name)
         {
             int index = _dataContext.ClassLst.FindIndex(c => (c.className == name && c.classTime.IsSameTime(time)));
@@ -47,8 +47,5 @@ namespace Grind.Service
             }
             return false;
         }
-
-
-
     }
 }

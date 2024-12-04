@@ -1,9 +1,15 @@
 ﻿using Grind.Core.Entities;
+using Grind.Core.Interfaces;
 
 namespace Grind.Service
 {
-    public class TrainerService
+    public class TrainerService: ITrainerService
     {
+        private readonly IDataContext _dataContext;
+        public TrainerService(IDataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
         public List<Trainer> GetTrainers()
         {
             return _dataContext.TrainersLst;

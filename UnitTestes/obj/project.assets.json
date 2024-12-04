@@ -1803,6 +1803,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Grind.Core": "1.0.0",
+          "Grind.Data": "1.0.0",
           "Grind.Service": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -1824,6 +1825,19 @@
         },
         "runtime": {
           "bin/placeholder/Grind.Core.dll": {}
+        }
+      },
+      "Grind.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Grind.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Grind.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Grind.Data.dll": {}
         }
       },
       "Grind.Service/1.0.0": {
@@ -5980,6 +5994,11 @@
       "type": "project",
       "path": "../Grind.Core/Grind.Core.csproj",
       "msbuildProject": "../Grind.Core/Grind.Core.csproj"
+    },
+    "Grind.Data/1.0.0": {
+      "type": "project",
+      "path": "../Grind.Data/Grind.Data.csproj",
+      "msbuildProject": "../Grind.Data/Grind.Data.csproj"
     },
     "Grind.Service/1.0.0": {
       "type": "project",

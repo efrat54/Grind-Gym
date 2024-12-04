@@ -1,8 +1,8 @@
-using Grind.Controllers;
+//using Grind.Controllers;
 using Grind.Core.Entities;
 using Grind.Core.Enums;
 
-namespace UnitTestes
+namespace UnitTestes.Test
 {
     public class TrainerTest
     {

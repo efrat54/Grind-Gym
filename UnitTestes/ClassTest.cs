@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitTestes
+namespace UnitTestes.Test
 {
     internal class ClassTest
     {

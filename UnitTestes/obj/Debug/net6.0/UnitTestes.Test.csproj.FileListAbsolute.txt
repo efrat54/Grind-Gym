@@ -4,3 +4,9 @@ D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.GeneratedMSBuildE
 D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.AssemblyInfoInputs.cache
 D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.AssemblyInfo.cs
 D:\hrind\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.csproj.CoreCompileInputs.cache
+D:\‏‏תיקיה חדשה\Grind-Gym\UnitTestes\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\‏‏תיקיה חדשה\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.csproj.AssemblyReference.cache
+D:\‏‏תיקיה חדשה\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\‏‏תיקיה חדשה\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.AssemblyInfoInputs.cache
+D:\‏‏תיקיה חדשה\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.AssemblyInfo.cs
+D:\‏‏תיקיה חדשה\Grind-Gym\UnitTestes\obj\Debug\net6.0\UnitTestes.Test.csproj.CoreCompileInputs.cache
