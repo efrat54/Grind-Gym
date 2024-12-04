@@ -50,7 +50,7 @@ namespace Grind.Api.Controllers
         [HttpPut("{id}")]
         public ActionResult Put([FromBody] Client client)
         {
-            if (_clientService.AddClient(client))
+            if (_clientService.UpdateClient(client))
                 return Ok("Client updated seccessfully");
             return NotFound("Client did not found");
         }

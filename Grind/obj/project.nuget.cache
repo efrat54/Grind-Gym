@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7wI4wAmlE9Ru7AqQ13JyVWbk5bfv5fFRfAvGShDlxTZJEmzbpgWTeMEgQgz4Hb4Wx84bG6RwPgLMfqVSJLgC6A==",
+  "dgSpecHash": "tOevDikCQK6Q4ERWcodGL6k9vXojpBb4X4VRfR51aJnZFand3l/Od22YMfZSwX7sxSUVb+Zxxy+G9vmEoXVbkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind\\Grind.Api.csproj",
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind\\Grind.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

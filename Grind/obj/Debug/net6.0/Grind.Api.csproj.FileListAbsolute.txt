@@ -74,3 +74,41 @@ C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind\obj\Debug\net6.0
 C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.pdb
 C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.genruntimeconfig.cache
 C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind\obj\Debug\net6.0\ref\Grind.Api.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\appsettings.json
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Api.exe
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Api.deps.json
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Api.runtimeconfig.json
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Api.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Api.pdb
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Core.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Data.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Service.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Core.pdb
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Data.pdb
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\bin\Debug\net6.0\Grind.Service.pdb
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.csproj.AssemblyReference.cache
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.AssemblyInfoInputs.cache
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.AssemblyInfo.cs
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.csproj.CoreCompileInputs.cache
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.Grind.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.build.Grind.Api.props
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Grind.Api.props
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Grind.Api.props
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\scopedcss\bundle\Grind.Api.styles.css
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.csproj.CopyComplete
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\refint\Grind.Api.dll
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.pdb
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\Grind.Api.genruntimeconfig.cache
+C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה (2)\Grind-Gym\Grind\obj\Debug\net6.0\ref\Grind.Api.dll
