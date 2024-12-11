@@ -13,6 +13,7 @@ namespace Grind.Core.Entities
         {
             isActive = true;  // מנוי פעיל ברירת מחדל
         }
+        public Client() { }
 
         // אוברייד למתודה ClassAdding - אם המנוי מוקפא, לא ניתן להוסיף שיעורים
         public override void ClassAdding(Class classN)

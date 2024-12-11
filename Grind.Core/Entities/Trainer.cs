@@ -4,17 +4,17 @@ namespace Grind.Core.Entities
     public class Trainer : Person
     {
         public GymClasses expertise { get;  set; }  // תחום ההתמחות של המדריך
-        public decimal monthlySalary { get;  set; }  // שכר חודשי של המדריך
+        public double monthlySalary { get;  set; }  // שכר חודשי של המדריך
         public Time[] classTimes { get; set; }  // מערך של זמנים לשיעורים
 
-        public Trainer(string id, string firstName, string lastName, Address address, string phoneNumber, GymClasses expertise, decimal monthlySalary)
+        public Trainer(string id, string firstName, string lastName, Address address, string phoneNumber, GymClasses expertise, double monthlySalary)
             : base(id, firstName, lastName, address, phoneNumber)
         {
             this.expertise = expertise;
             this.monthlySalary = monthlySalary;
             classTimes = new Time[5];  // אתחול מערך שיעורים בגודל 5
         }
-
+        public Trainer() { }
         // אוברייד של המתודה ClassAdding
         public override void ClassAdding(Class classN)
         {
@@ -38,7 +38,7 @@ namespace Grind.Core.Entities
             {
                 if (classTimes[i] == null)
                 {
-                    classTimes[i] = new Time(classN.classTime.Day,classN.classTime.hour,classN.classTime.minute);  // הוספת הזמן לשיעור במערך
+                    classTimes[i] = new Time(classN.classTime.Day,classN.classTime.hour,classN.classTime.minute,classN.classTime.id);  // הוספת הזמן לשיעור במערך
                     this.monthlySalary += (classN.cost* classN.numOfParticipants)*3/10;
                     Console.WriteLine("Class added successfully.");
                     return;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Data\\Grind.Data.csproj": {}
+    "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Data\\Grind.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Core\\Grind.Core.csproj": {
+    "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
+        "projectUniqueName": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
         "projectName": "Grind.Core",
-        "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
+        "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
         "packagesPath": "C:\\Users\\merav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Core\\obj\\",
+        "outputPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Data\\Grind.Data.csproj": {
+    "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Data\\Grind.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
+        "projectUniqueName": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
         "projectName": "Grind.Data",
-        "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
+        "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Data\\Grind.Data.csproj",
         "packagesPath": "C:\\Users\\merav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Data\\obj\\",
+        "outputPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Core\\Grind.Core.csproj": {
-                "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Core\\Grind.Core.csproj"
+              "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj": {
+                "projectPath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj"
               }
             }
           }
@@ -106,6 +112,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -20,7 +20,8 @@ namespace Grind.Api
             builder.Services.AddSwaggerGen();
 
             //הזרקת תלויות
-            builder.Services.AddSingleton<IDataContext,DataContext>();
+            //builder.Services.AddSingleton<IDataContext,DataContext>();
+            builder.Services.AddDbContext<DataContext>();           
             builder.Services.AddScoped<IClassService, ClassService>();
             builder.Services.AddScoped<IClientService, ClientService>();
             builder.Services.AddScoped<ITrainerService, TrainerService>();

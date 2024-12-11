@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xc1pCwgIYx4l6EN/weCNvtp+hPptDkVb0+xu5LU+EMy/G+hS1K1rYqpR/N85EMt6EyKDpmzY8V6hFcMYiLLxAg==",
+  "dgSpecHash": "BWw6XY7SqiPK82ejho6npGFt+05fBj+wvUXeIAO0n7Eo/JVlTsxNWZDig2PAnUWN07ax+HNt3vtjyRoWiyu3SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה (2)\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\merav\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.36\\microsoft.entityframeworkcore.abstractions.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }

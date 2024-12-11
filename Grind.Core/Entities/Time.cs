@@ -4,16 +4,20 @@ namespace Grind.Core.Entities
     public class Time
     {
         public DayOfWeekEnum Day { get; set; }  // יום בשבוע
-        //public TimeSpan TimeOfDay { get; set; }  // שעה ודקה
+        
         public int hour {  get; set; }
         public int minute { get; set; }
+        public int id { get; set; }
 
+        public Time() { }
         // בנאי של המחלקה Time - מקבל יום (Enum) ושעה ודקה
-        public Time(DayOfWeekEnum day, int hour, int minute)
+        public Time(DayOfWeekEnum day, int hour, int minute, int id)
         {
             this.Day = day;
             this.hour = hour;
-            this.minute = minute;        }
+            this.minute = minute;
+            this.id = id;
+        }
 
 
         // אוברייד של ToString כדי להדפיס בצורה נוחה

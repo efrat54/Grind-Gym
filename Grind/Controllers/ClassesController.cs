@@ -28,9 +28,9 @@ namespace Grind.Api.Controllers
         }
 
         [HttpGet("{class name}")]
-        public ActionResult<Class> Get(Time time, GymClasses name)
+        public ActionResult<Class> Get(int id)
         {
-            Class lesson = _ClassService.GetSpecificClass(time, name);
+            Class lesson = _ClassService.GetSpecificClass(id);
             if (lesson == null)
             {
                 return NotFound("Class did not found");
@@ -46,7 +46,7 @@ namespace Grind.Api.Controllers
             _ClassService.AddClass(c);
             return Ok("added seccessfully");
         }
-
+       
         [HttpPut("{id}")]
         public ActionResult Put(Class c1)
         {
@@ -55,9 +55,9 @@ namespace Grind.Api.Controllers
             return NotFound("Class did not found");
         }
         [HttpDelete()]
-        public ActionResult Delete(Time time, GymClasses name)
+        public ActionResult Delete(int id)
         {
-            if (_ClassService.DeleteClass(time, name))
+            if (_ClassService.DeleteClass(id))
                 return Ok("Class deleted seccessfully");
             return NotFound("Class did not found");
         }

@@ -1,26 +1,25 @@
 ﻿
 using Grind.Core.Entities;
-using Grind.Core.Enums;
 using Grind.Core.Interfaces;
-using System.Linq;
+using Grind.Data;
 
 namespace Grind.Service
 {
-    public class ClassService: IClassService
+    public class ClassService : IClassService
     {
-        private readonly IDataContext _dataContext;
-        public ClassService(IDataContext dataContext)
+        private readonly DataContext _dataContext;
+        public ClassService(DataContext dataContext)
         {
             _dataContext = dataContext;
         }
         public List<Class> GetClasses()
         {
-            return _dataContext.ClassLst;
+            return _dataContext.ClassLst.ToList();
         }
-        public Class GetSpecificClass(Time time, Core.Enums.GymClasses name)
+        public Class GetSpecificClass(int id)
         {
-            
-            return _dataContext.ClassLst.FirstOrDefault(c => (c.className == name && c.classTime.IsSameTime(time)));
+
+            return _dataContext.ClassLst.FirstOrDefault(c => c.Id == id );
 
         }
         public void AddClass(Class c)
@@ -29,20 +28,20 @@ namespace Grind.Service
         }
         public bool UpdateClass(Class c1)
         {
-            int index = _dataContext.ClassLst.FindIndex(c => (c.className == c1.className && c.classTime.IsSameTime(c1.classTime)));
+            int index = _dataContext.ClassLst.ToList().FindIndex(c => c.Id==c1.Id);
             if (index != -1)
             {
-                _dataContext.ClassLst[index] = c1;
+                _dataContext.ClassLst.ToList()[index] = c1;
                 return true;
             }
             return false;
         }
-        public bool DeleteClass(Time time, GymClasses name)
+        public bool DeleteClass(int id)
         {
-            int index = _dataContext.ClassLst.FindIndex(c => (c.className == name && c.classTime.IsSameTime(time)));
+            int index = _dataContext.ClassLst.ToList().FindIndex(c => c.Id==id);
             if (index != -1)
             {
-                _dataContext.ClassLst.RemoveAt(index);
+                _dataContext.ClassLst.ToList().RemoveAt(index);
                 return true;
             }
             return false;

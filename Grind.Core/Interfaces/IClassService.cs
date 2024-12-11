@@ -11,9 +11,9 @@ namespace Grind.Core.Interfaces
     public interface IClassService
     {
         public List<Class> GetClasses();
-        public Class GetSpecificClass(Time time, Core.Enums.GymClasses name);
+        public Class GetSpecificClass(int id);
         public void AddClass(Class c);
         public bool UpdateClass(Class c1);
-        public bool DeleteClass(Time time, GymClasses name);
+        public bool DeleteClass(int id);
     }
 }

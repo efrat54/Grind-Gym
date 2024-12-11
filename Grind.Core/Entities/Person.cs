@@ -14,6 +14,7 @@
         protected Class[] chosenClasses;  // מערך שיעורים
         protected int numOfClasses;            // מספר שיעורים שנבחרו
 
+        public Person(){ }
         //בדיקה שהתז תקין
         public string Id
         {
