@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Grind.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241211112147_MyInit")]
-    partial class MyInit
+    [Migration("20250110124530_h")]
+    partial class h
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -127,20 +127,21 @@ namespace Grind.Data.Migrations
                     b.Property<int>("Day")
                         .HasColumnType("int");
 
-                    b.Property<string>("TrainerId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<int>("hour")
                         .HasColumnType("int");
 
                     b.Property<int>("minute")
                         .HasColumnType("int");
 
+                    b.Property<string>("trainerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("id");
 
-                    b.HasIndex("TrainerId");
+                    b.HasIndex("trainerId");
 
-                    b.ToTable("Time");
+                    b.ToTable("TimesLst");
                 });
 
             modelBuilder.Entity("Grind.Core.Entities.Trainer", b =>
@@ -170,8 +171,8 @@ namespace Grind.Data.Migrations
                     b.Property<int>("expertise")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("monthlySalary")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("monthlySalary")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -206,7 +207,9 @@ namespace Grind.Data.Migrations
                 {
                     b.HasOne("Grind.Core.Entities.Trainer", null)
                         .WithMany("classTimes")
-                        .HasForeignKey("TrainerId");
+                        .HasForeignKey("trainerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Grind.Core.Entities.Trainer", b =>

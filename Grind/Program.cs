@@ -3,6 +3,7 @@ using Grind.Core.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using Grind.Service;
 using Grind.Data;
+using Grind.Core.Dots;
 
 namespace Grind.Api
 {
@@ -25,6 +26,8 @@ namespace Grind.Api
             builder.Services.AddScoped<IClassService, ClassService>();
             builder.Services.AddScoped<IClientService, ClientService>();
             builder.Services.AddScoped<ITrainerService, TrainerService>();
+
+            builder.Services.AddAutoMapper(typeof(MapperProfile));
 
 
             var app = builder.Build();

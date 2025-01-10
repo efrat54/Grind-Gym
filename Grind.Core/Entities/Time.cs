@@ -8,6 +8,7 @@ namespace Grind.Core.Entities
         public int hour {  get; set; }
         public int minute { get; set; }
         public int id { get; set; }
+        public string trainerId {  get; set; }
 
         public Time() { }
         // בנאי של המחלקה Time - מקבל יום (Enum) ושעה ודקה

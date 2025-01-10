@@ -18,6 +18,17 @@
           "UnitTestes.Test.dll": {}
         }
       },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
+        }
+      },
       "coverlet.collector/3.2.0": {},
       "Microsoft.CodeCoverage/17.5.0": {
         "runtime": {
@@ -1495,6 +1506,7 @@
       "xunit.runner.visualstudio/2.4.5": {},
       "Grind.Api/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Grind.Core": "1.0.0",
           "Grind.Service": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
@@ -1505,6 +1517,7 @@
       },
       "Grind.Core/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Microsoft.EntityFrameworkCore.Abstractions": "6.0.36"
         },
         "runtime": {
@@ -1522,6 +1535,7 @@
       },
       "Grind.Service/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Grind.Core": "1.0.0",
           "Grind.Data": "1.0.0"
         },
@@ -1536,6 +1550,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "coverlet.collector/3.2.0": {
       "type": "package",

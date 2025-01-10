@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Grind.Core\Grind.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

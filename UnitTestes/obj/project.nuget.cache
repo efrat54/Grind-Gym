@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tvPFHQugvqk7rH5c/WeQc4YQuERWL5eX/eGbRKY+6qnS1mCUByaKNR6dczvQobY0lFQrNTwtrciAvyBTwrbyMQ==",
+  "dgSpecHash": "5V3yPFREqapPqB1Px0MKgmvERV/Xa2GC9NlyUq5pgCuEwGmiu67j25xuRmNdYX3E76mg0PmbvXv3KUdMklBszw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\‏‏תיקיה חדשה\\Grind-Gym\\UnitTestes\\UnitTestes.Test.csproj",
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\UnitTestes\\UnitTestes.Test.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\merav\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

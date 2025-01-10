@@ -104,3 +104,22 @@ C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה\Grind-
 C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה\Grind-Gym\Grind.Service\obj\Debug\net6.0\refint\Grind.Service.dll
 C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.pdb
 C:\Users\merav\OneDrive\שולחן העבודה\‏‏תיקיה חדשה\Grind-Gym\Grind.Service\obj\Debug\net6.0\ref\Grind.Service.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Service.deps.json
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Service.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Service.pdb
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Core.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Data.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Core.pdb
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Data.pdb
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.csproj.AssemblyReference.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.GeneratedMSBuildEditorConfig.editorconfig
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.AssemblyInfoInputs.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.AssemblyInfo.cs
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.csproj.CoreCompileInputs.cache
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.csproj.CopyComplete
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\refint\Grind.Service.dll
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\Grind.Service.pdb
+W:\‏‏כתות ו\התמחויות\הנדסת תוכנה\תלמידות\חוגי אפרת\Dot Net\Grind-Gym\Grind.Service\obj\Debug\net6.0\ref\Grind.Service.dll
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Data.dll
+C:\Users\merav\OneDrive\שולחן העבודה\Grind-Gym\Grind.Service\bin\Debug\net6.0\Grind.Data.pdb

@@ -4,7 +4,7 @@
 
 namespace Grind.Data.Migrations
 {
-    public partial class MyInit : Migration
+    public partial class h : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -52,7 +52,7 @@ namespace Grind.Data.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     expertise = table.Column<int>(type: "int", nullable: false),
-                    monthlySalary = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    monthlySalary = table.Column<double>(type: "float", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Addressid = table.Column<int>(type: "int", nullable: false),
@@ -71,7 +71,7 @@ namespace Grind.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Time",
+                name: "TimesLst",
                 columns: table => new
                 {
                     id = table.Column<int>(type: "int", nullable: false)
@@ -79,16 +79,17 @@ namespace Grind.Data.Migrations
                     Day = table.Column<int>(type: "int", nullable: false),
                     hour = table.Column<int>(type: "int", nullable: false),
                     minute = table.Column<int>(type: "int", nullable: false),
-                    TrainerId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                    trainerId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Time", x => x.id);
+                    table.PrimaryKey("PK_TimesLst", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Time_TrainersLst_TrainerId",
-                        column: x => x.TrainerId,
+                        name: "FK_TimesLst_TrainersLst_trainerId",
+                        column: x => x.trainerId,
                         principalTable: "TrainersLst",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -108,9 +109,9 @@ namespace Grind.Data.Migrations
                 {
                     table.PrimaryKey("PK_ClassLst", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ClassLst_Time_classTimeid",
+                        name: "FK_ClassLst_TimesLst_classTimeid",
                         column: x => x.classTimeid,
-                        principalTable: "Time",
+                        principalTable: "TimesLst",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -126,9 +127,9 @@ namespace Grind.Data.Migrations
                 column: "Addressid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Time_TrainerId",
-                table: "Time",
-                column: "TrainerId");
+                name: "IX_TimesLst_trainerId",
+                table: "TimesLst",
+                column: "trainerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TrainersLst_Addressid",
@@ -145,7 +146,7 @@ namespace Grind.Data.Migrations
                 name: "ClientsLst");
 
             migrationBuilder.DropTable(
-                name: "Time");
+                name: "TimesLst");
 
             migrationBuilder.DropTable(
                 name: "TrainersLst");
