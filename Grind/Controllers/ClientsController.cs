@@ -1,4 +1,5 @@
-﻿using Grind.Core.Entities;
+﻿using Grind.Core.Dots;
+using Grind.Core.Entities;
 using Grind.Core.Interfaces;
 using Grind.Service;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +23,7 @@ namespace Grind.Api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Client>> Get()
         {
-            List<Client> c = _clientService.GetClients();
+            List<ClientDTO> c = _clientService.GetClients();
             if (c == null)
                 return NotFound();
             return Ok(c);

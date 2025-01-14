@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper;
+using Grind.Core.Dots;
 using Grind.Core.Entities;
 using Grind.Core.Interfaces;
 using Grind.Data;
@@ -16,10 +17,10 @@ namespace Grind.Service
             _dataContext = dataContext;
             _mapper = mapper;
         }
-        public List<Client> GetClients()
+        public List<ClientDTO> GetClients()
         {
            var clients= _dataContext.ClientsLst.Include(c => c.Address).ToList();
-            return _mapper.Map<List<Client>>(clients);
+            return _mapper.Map<List<ClientDTO>>(clients);
         }
         public Client GetSpecificClient(string id)
         {

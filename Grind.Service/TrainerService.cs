@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Grind.Core.Dots;
 using Grind.Core.Entities;
 using Grind.Core.Interfaces;
 using Grind.Data;
@@ -15,16 +16,19 @@ namespace Grind.Service
             _dataContext = dataContext;
             _mapper = mapper;
         }
-        public List<Trainer> GetTrainers()
+        public List<TrainerDTO> GetTrainers()
         {
              var trainers=_dataContext.TrainersLst.Include(t => t.Address).ToList();
-            return _mapper.Map<List<Trainer>>(trainers);
+            return _mapper.Map<List<TrainerDTO>>(trainers);
         }
-        public Trainer GetSpecificTrainer(string id)
+        public TrainerDTO GetSpecificTrainer(string id)
         {
-           Trainer t= _dataContext.TrainersLst.Include(t => t.Address).FirstOrDefault(t=>t.Id==id);
-             if(t!=null)
-                return _mapper.Map<Trainer>(t);
+            var trainer = _dataContext.TrainersLst.Include(t => t.Address).FirstOrDefault(t => t.Id == id);
+
+            if (trainer != null)
+            {
+                return _mapper.Map<TrainerDTO>(trainer);
+            }
             return null;
             //int index = _dataContext.TrainersLst.ToList().FindIndex(t => t.Id == id);
             //if (index != -1)

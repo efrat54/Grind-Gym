@@ -1,4 +1,5 @@
-﻿using Grind.Core.Entities;
+﻿using Grind.Core.Dots;
+using Grind.Core.Entities;
 using Grind.Core.Interfaces;
 using Grind.Service;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +20,7 @@ namespace Grind.Api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Trainer>> Get()
         {
-            List<Trainer> trainersTmp = _TrainerService.GetTrainers();
+            List<TrainerDTO> trainersTmp = _TrainerService.GetTrainers();
             if (trainersTmp == null)
                 return NotFound("Trainer did not found");
             return Ok(trainersTmp);
@@ -30,7 +31,7 @@ namespace Grind.Api.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(string id)
         {
-            Trainer t = _TrainerService.GetSpecificTrainer(id);
+            TrainerDTO t = _TrainerService.GetSpecificTrainer(id);
             if (t == null)
                 return NotFound("not found");
             return Ok(t);
