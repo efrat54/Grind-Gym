@@ -7,7 +7,7 @@ using Grind.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Grind.Service
-{
+{ 
     public class ClientService: IClientService
     {
         private readonly DataContext _dataContext;
@@ -22,6 +22,7 @@ namespace Grind.Service
            var clients= _dataContext.ClientsLst.Include(c => c.Address).ToList();
             return _mapper.Map<List<ClientDTO>>(clients);
         }
+        //איך עושים את האסינק בגט? הוא לא נותן לעשות אוואיט
         public Client GetSpecificClient(string id)
         {
             //int index = _dataContext.ClientsLst.ToList().FindIndex(t => t.Id == id);
@@ -35,24 +36,24 @@ namespace Grind.Service
                 return _mapper.Map<Client>(c);
             return null;
         }
-        public bool AddClient(Client c)
+        public async Task<bool> AddClientAsync(Client c)
         {
             //if (_dataContext.ClientsLst.ToList().FindIndex(c1 => c1.Id == c.Id) == -1)
             if(_dataContext.ClientsLst.Find(c.Id)==null)
             {
                 _dataContext.ClientsLst.Add(c);
-                _dataContext.SaveChanges();
+                await _dataContext.SaveChangesAsync();
                 return true;
             }
             return false;
         }
-        public bool UpdateClient(Client client)
+        public async Task<bool> UpdateClientAsync(Client client)
         {
             var updatedClient = _dataContext.ClientsLst.Find(client.Id);
             if (updatedClient != null)
             {
                 _dataContext.Entry(updatedClient).CurrentValues.SetValues(client);
-                _dataContext.SaveChanges();
+                await _dataContext.SaveChangesAsync();
                 return true;
             }
             return false;
@@ -65,13 +66,13 @@ namespace Grind.Service
             //return false;
 
         }
-        public bool DeleteClient(string id)
+        public async Task<bool> DeleteClientAsync(string id)
         {
             var client = _dataContext.ClientsLst.Find(id);
             if (client != null)
             {
                 _dataContext.ClientsLst.Remove(client);
-                _dataContext.SaveChanges();
+               await _dataContext.SaveChangesAsync();
                 return true;
             }
             return false;

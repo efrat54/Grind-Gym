@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wvhm0jMHSuEGqKsQ41O0+D5JSAN4+n1Ogkyu5TuROa21VkHOhctz9rg2Gla6Dq9voS2Pwlqgk2/3gZg1aj/0lQ==",
+  "dgSpecHash": "ws9crns6dqRdXqrr+LD7MSHZhM+4Sg5sYSptxqFw7phGGvE3YgkDFAss6fUXAm8niuGFfHmXpf2Tn/4MJmL+NA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind\\Grind.Api.csproj",
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\Grind\\Grind.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merav\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

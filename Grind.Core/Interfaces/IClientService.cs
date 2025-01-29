@@ -1,10 +1,5 @@
 ﻿using Grind.Core.Dots;
 using Grind.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Grind.Core.Interfaces
 {
@@ -12,8 +7,8 @@ namespace Grind.Core.Interfaces
     {
         public List<ClientDTO> GetClients();
         public Client GetSpecificClient(string id);
-        public bool AddClient(Client c);
-        public bool UpdateClient(Client client);
-        public bool DeleteClient(string id);
+        public Task<bool>AddClientAsync(Client c);
+        public Task<bool> UpdateClientAsync(Client client);
+        public Task<bool> DeleteClientAsync(string id);
     }
 }

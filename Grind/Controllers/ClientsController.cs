@@ -32,6 +32,7 @@ namespace Grind.Api.Controllers
         // GET api/<Clients>/5
         [HttpGet("{id}")]
         public ActionResult Get(string id)
+
         {
             Client t = _clientService.GetSpecificClient(id);
             if (t == null) return NotFound("Client did not found");
@@ -40,26 +41,26 @@ namespace Grind.Api.Controllers
 
         // POST api/<Clients>
         [HttpPost]
-        public ActionResult Post([FromBody] Client c)
+        public async Task<ActionResult> Post([FromBody] Client c)
         {
-            if (_clientService.AddClient(c))
+            if (await _clientService.AddClientAsync(c))
                 return Ok("Client added seccessfully");
             return NotFound("this id is already in system");
         }
 
         // PUT api/<Clients>/5
         [HttpPut("{id}")]
-        public ActionResult Put([FromBody] Client client)
+        public async Task<ActionResult> Put([FromBody] Client client)
         {
-            if (_clientService.UpdateClient(client))
+            if (await _clientService.UpdateClientAsync(client))
                 return Ok("Client updated seccessfully");
             return NotFound("Client did not found");
         }
         // DELETE api/<Clients>/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(string id)
+        public async Task<ActionResult> Delete(string id)
         {
-            if (_clientService.DeleteClient(id))
+            if (await _clientService.DeleteClientAsync(id))
 
                 return Ok("Client deleted seccessfully");
             return NotFound("Client did not found");

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hsD7O84KOOPpTtyEZlJ8fuOlwyMijRvEUNjsrBY286Ep2BgVdZ6sgcsp00KrBpR3Kwq5FVnlPKwU9bKvUeRPOQ==",
+  "dgSpecHash": "yODoicx+c2XT/9kSCGOL7tf4f/0yrITFPcBYMpMF6yjSF8g+VQeHm83MCVBAIjguNBync1qGQPzid3yo0vatgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\Grind-Gym\\Grind.Service\\Grind.Service.csproj",
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\Grind.Service\\Grind.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merav\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

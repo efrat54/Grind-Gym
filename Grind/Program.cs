@@ -29,8 +29,19 @@ namespace Grind.Api
 
             builder.Services.AddAutoMapper(typeof(MapperProfile));
 
-
+            //יצירת מידלוואר, שיבצע כתיבה ללוג לפני ואחרי הקריאה לאייפיאיי
             var app = builder.Build();
+            app.Use(async (context, next) =>
+            {
+                var endpoint = context.GetEndpoint();
+                var actionName = endpoint?.Metadata.GetMetadata<Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor>()?.ActionName ?? "Unknown";
+                var startTime = DateTime.UtcNow;
+                await next.Invoke();
+                var endTime = DateTime.UtcNow;
+                var duration = endTime - startTime;
+                Console.WriteLine($"Finished execution of {actionName}: Execution time: {duration.TotalMilliseconds} ms");
+            });
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
