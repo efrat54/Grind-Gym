@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OEpW9O9IStDd1H7TdzSB6n+vfx0U+YW+9rkqn3T6ltbMaqZMWksh+pZ7CXgNXbexJHg3qilaBylARlmrFdSAJg==",
+  "dgSpecHash": "mHsDd3EveFVWRNLBsH3HIGJ3jP461OMEKfauG4TGhaMPsq6MDXoOp12NIeOc3L7xI4KyqfBrWmId6mGCo28quw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind.Core\\Grind.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merav\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.36\\microsoft.entityframeworkcore.abstractions.6.0.36.nupkg.sha512",

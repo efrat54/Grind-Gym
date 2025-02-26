@@ -2,11 +2,13 @@
 using Grind.Core.Entities;
 using Grind.Core.Interfaces;
 using Grind.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace Grind.Api.Controllers
 {
+    [Authorize]//זה מגדיר שכל האייפיאיי בקונטרולר הזה יצטכו טוקן
     [Route("api/[controller]")]
     [ApiController]
     public class TrainerConroller : ControllerBase

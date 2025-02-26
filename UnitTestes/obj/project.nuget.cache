@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VPYgzba3efDANWJFpL0ajRBgcp6lldi2kWEtr//pbcUVe6S7h7ZW3O+JexF/GKTbXExl3N6j7ZVI2mwnRXl8kQ==",
+  "dgSpecHash": "9ls/yk4uiF699mL0kVQe/7WlyWydabFa4wGnkdNLzNkFkvq/XOfeWmtsk0R4mSwRfKVCY0NWeN58HT/mr1EGaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\Grind-Gym\\UnitTestes\\UnitTestes.Test.csproj",
+  "projectFilePath": "C:\\Users\\merav\\OneDrive\\שולחן העבודה\\לימודים\\doteNet\\Grind-Gym\\UnitTestes\\UnitTestes.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merav\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\merav\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.36\\microsoft.aspnetcore.authentication.jwtbearer.6.0.36.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\merav\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",

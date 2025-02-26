@@ -15,14 +15,17 @@ namespace Grind.Api.Controllers
     public class ClientsController : ControllerBase
     {
         private readonly IClientService _clientService;
-        public ClientsController(IClientService clientService)
+        private readonly IConfiguration _configuration;
+        public ClientsController(IClientService clientService, IConfiguration configuration)
         {
             _clientService = clientService;
+            _configuration = configuration;
         }
         // GET: api/<Clients>
         [HttpGet]
         public ActionResult<IEnumerable<Client>> Get()
         {
+            Console.WriteLine(_configuration["ApplicationName"]);
             List<ClientDTO> c = _clientService.GetClients();
             if (c == null)
                 return NotFound();

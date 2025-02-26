@@ -110,3 +110,15 @@ F:\שנה ב\Dot Net\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.dll
 F:\שנה ב\Dot Net\Grind-Gym\Grind.Core\obj\Debug\net6.0\refint\Grind.Core.dll
 F:\שנה ב\Dot Net\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.pdb
 F:\שנה ב\Dot Net\Grind-Gym\Grind.Core\obj\Debug\net6.0\ref\Grind.Core.dll
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.deps.json
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.dll
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\bin\Debug\net6.0\Grind.Core.pdb
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.csproj.AssemblyReference.cache
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfoInputs.cache
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.AssemblyInfo.cs
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.csproj.CoreCompileInputs.cache
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.dll
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\refint\Grind.Core.dll
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\Grind.Core.pdb
+F:\שנה ב\Dot Net\‏‏תיקיה חדשה\Grind-Gym\Grind.Core\obj\Debug\net6.0\ref\Grind.Core.dll
